@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<form method="POST">
+
+<div>
+    <div><h1>Add Flower Value</h1></div><br>
+
+    {% csrf_token %}
+    Sepal Length    <input type="text" placeholder="Sepal_length" name="Sepal_length"><br>
+    Sepal Width     <input type="text" placeholder="Sepal_width" name="Sepal_width"><br>
+    Petal Length    <input type="text" placeholder="Petal_length" name="Petal_length"><br>
+    Petal Width     <input type="text" placeholder="Petal_width" name="Petal_width"><br>
+    Class           <input type="text" placeholder="Class" name="Class"><br><br>
+    <button type="submit">Submit</button>
+    <button type="submit" name="action" value="done">Done</button>
+</div>
+</form>
+</html>
